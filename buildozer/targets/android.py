@@ -301,7 +301,7 @@ class TargetAndroid(Target):
         cmd = self.buildozer.cmd
         self.pa_dir = pa_dir = join(self.buildozer.platform_dir, 'python-for-android')
         if not self.buildozer.file_exists(pa_dir):
-            cmd('git clone git://github.com/kivy/python-for-android',
+            cmd('git clone git://github.com/eHealthAfrica/python-for-android',
                     cwd=self.buildozer.platform_dir)
         elif self.platform_update:
             cmd('git clean -dxf', cwd=pa_dir)
